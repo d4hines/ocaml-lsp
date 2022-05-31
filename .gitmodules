@@ -1,7 +1,7 @@
 [submodule "ocaml-lsp-server/vendor/merlin"]
 	path = ocaml-lsp-server/vendor/merlin
-	url = https://github.com/rgrinberg/merlin
-	branch = lsp
+	url = https://github.com/anmonteiro/merlin
+	branch = anmonteiro/lsp-500
 	ignore = dirty
 [submodule "submodules/dune"]
 	path = submodules/dune
