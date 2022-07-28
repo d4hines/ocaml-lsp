@@ -469,11 +469,11 @@ end = struct
                  config.log ~type_:Info ~message
                in
                let progress = progress_loop client progress in
-               let diagnostics =
+               (* let diagnostics =
                  diagnostic_loop client config running diagnostics
-               in
+               in *)
                Fiber.all_concurrently_unit
-                 [ progress; diagnostics; Fiber.Ivar.read finish ]))
+                 [ progress; (* diagnostics; *) Fiber.Ivar.read finish ]))
         ]
     in
     Progress.end_build_if_running progress
